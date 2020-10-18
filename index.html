@@ -14,136 +14,93 @@
 </head>
 
 <body>
+  
+  <!-- Header: tells date & time -->
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
 
+  <!-- Time blocks (7a-9p) -->
   <div class="container">
     <div class="time-block row past">
-      <div class="col-1 hour">12am</div>
+      <div value="7" class="col-1 hour">7am</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">1am</div>
+      <div value="8" class="col-1 hour">8am</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">2am</div>
+      <div value= "9" class="col-1 hour">9am</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">3am</div>
+      <div value="10" class="col-1 hour">10am</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">4am</div>
+      <div value="11" class="col-1 hour">11am</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">5am</div>
+      <div value="12" class="col-1 hour">12pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">6am</div>
+      <div value="13" class="col-1 hour">1pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">7am</div>
+      <div value= "14" class="col-1 hour">2pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">8am</div>
+      <div value="15" class="col-1 hour">3pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">9am</div>
+      <div value="16" class="col-1 hour">4pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">10am</div>
+      <div value="17" class="col-1 hour">5pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">11am</div>
+      <div value="18" class="col-1 hour">6pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">12pm</div>
+      <div value="19" class="col-1 hour">7pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">1pm</div>
+      <div value="20" class="col-1 hour">8pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
     </div>
     <div class="time-block row past">
-      <div class="col-1 hour">2pm</div>
+      <div value= "21" class="col-1 hour">9pm</div>
       <textarea class="col-8 description"></textarea>
       <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">3pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">4pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">5pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">6pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">7pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">8pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">9pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">10pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
-    <div class="time-block row past">
-      <div class="col-1 hour">11pm</div>
-      <textarea class="col-8 description"></textarea>
-      <div class="saveBtn col-3"></div>
-    </div>
   </div>
 
-
+  
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="script.js"></script>  
