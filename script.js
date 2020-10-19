@@ -1,8 +1,11 @@
-var currentTime = moment().format("ddd, MMMM Mo, h:mA");
+var currentTime = moment().format("ddd, MMMM Mo, h:mmA");
 var valueCompare = moment().format("k");
-// console.log($(timeVal.attr("date-time")))
+//check to see if data exists on load
+var data = JSON.parse(localStorage.getItem("data"));
+if (data == null){
 
-var data = {
+//store area for the schedule input text
+data = {
     time7 : "",
     time8 : "",
     time9 : "",
@@ -19,24 +22,25 @@ var data = {
     time20 : "",
     time21 : ""
 }
+}
 
 // Update time / date in the header
 function timeUpdate(){
     var timeEl = $("#currentDay");
     timeEl.text(currentTime);
 }
-
+//save text to local store
 $(".saveBtn").on("click", function() {
     var saveLocal = $(this).attr("save")
     var savedText = $("#time-" + saveLocal).children("textarea").val();
-    console.log(savedText)
+    data["time"+saveLocal] = savedText;
+    localStorage.setItem("data", JSON.stringify(data));
 });
 
 // compare values against current time - determine past, present, or future block
 function whatTimeIsIt (){    
     for ( let i=7 ; i <= 21; i++){
-        
-        // var timeVal= $(".time-block").attr("data-time");
+        $("#time-" + i).children("textarea").text(data["time"+i])
         if (i < valueCompare){
             $("#time-" + i).children("textarea").addClass("past");
         }
